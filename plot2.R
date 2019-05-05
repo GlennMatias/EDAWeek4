@@ -31,6 +31,8 @@ baltimoreCityInMarylandSubsetGroupedByYear = group_by(baltimoreCityInMarylandSub
 output = summarise(baltimoreCityInMarylandSubsetGroupedByYear, sum = sum(Emissions))
 View(output)
 
+par(mfrow=c(1,1))
+
 #plot the data
 barplot(main = 'Change in Emission in Baltimore City, Maryland', height=output$sum/1000, xlab="Year", ylab=expression('Total of Emissions'), names.arg=output$year)
 

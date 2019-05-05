@@ -61,4 +61,5 @@ losAngelesPlot = ggplot(data=onRoadSubsetLosAngeles, aes(x=onRoadSubsetLosAngele
     ylab(expression('Total Emissions')) + ggtitle("Emissions from motor vehicle sources in Los Angeles City")
 
 
+grid.arrange(baltimorePlot, losAngelesPlot, ncol=2)
 
